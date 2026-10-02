@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS TECH Ai - Engineering Smarter Infrastructure</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- ===================== NAVBAR ===================== -->
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm fixed-top py-3">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <!-- Logo placeholder -->
+                <img src="img/main-logo.jpg" alt="CS TECH Ai" class="site-logo" onerror="this.style.display='none'">
+                <!-- <span class="logo-text ms-2">
+                    <span class="logo-main">CS TECH</span><sup class="logo-sup">Ai</sup>
+                    <small class="d-block logo-tag">Enhancing Possibilities</small>
+                </span> -->
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav mx-auto align-items-lg-center gap-lg-2">
+                    <li class="nav-item"><a class="nav-link" href="industries.html">Industries</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Solutions &amp; Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Investors</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Careers</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
+                </ul>
+                <div class="dropdown">
+                    <button class="btn btn-link region-btn dropdown-toggle" data-bs-toggle="dropdown">
+                        India/Global
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><a class="dropdown-item" href="#">India</a></li>
+                        <li><a class="dropdown-item" href="#">Global</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ===================== HERO SECTION ===================== -->
+    <section class="hero-section">
+        <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="hero-slide" style="background-image:url('img/banner.png')">
+                        <div class="hero-overlay"></div>
+                        <div class="container position-relative">
+                            <div class="row">
+                                <div class="col-lg-7 col-xl-6">
+                                    <div class="hero-content">
+                                        <p class="hero-eyebrow">GEOSPATIAL &nbsp;&bull;&nbsp; INFRASTRUCTURE &nbsp;&bull;&nbsp; DIGITAL</p>
+                                        <div class="hero-divider"></div>
+                                        <h1 class="hero-title">
+                                            Engineering Smarter<br>
+                                            Infrastructure Through<br>
+                                            Geospatial Intelligence
+                                        </h1>
+                                        <p class="hero-sub">
+                                            Combining geospatial intelligence, engineering expertise
+                                            and advanced digital technologies to help organizations
+                                            plan, develop and manage critical infrastructure.
+                                        </p>
+                                        <a href="#industries" class="btn hero-btn">
+                                            Explore Our Industries <i class="bi bi-arrow-right ms-2"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="hero-badges">
+                                <div class="hero-badge">
+                                    <i class="bi bi-building"></i>
+                                    <span>Smarter Cities</span>
+                                </div>
+                                <div class="hero-badge">
+                                    <i class="bi bi-bricks"></i>
+                                    <span>Resilient Infrastructure</span>
+                                </div>
+                                <div class="hero-badge">
+                                    <i class="bi bi-tree"></i>
+                                    <span>Sustainable Communities</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+                <span class="carousel-arrow"><i class="bi bi-chevron-left"></i></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+                <span class="carousel-arrow"><i class="bi bi-chevron-right"></i></span>
+            </button>
+            <div class="carousel-dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== STATS BAR ===================== -->
+    <section class="stats-section py-5 bg-white">
+        <div class="container">
+            <div class="row g-3 text-center text-lg-start">
+                <div class="col-6 col-md-4 col-lg">
+                    <div class="stat-item">
+                        <div class="stat-icon"><i class="bi bi-calendar3"></i></div>
+                        <div>
+                            <h3 class="stat-number">28+ <small>Years</small></h3>
+                            <p class="stat-label">Industry Experience</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg">
+                    <div class="stat-item">
+                        <div class="stat-icon"><i class="bi bi-people-fill"></i></div>
+                        <div>
+                            <h3 class="stat-number">1,400+</h3>
+                            <p class="stat-label">Professionals</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg">
+                    <div class="stat-item">
+                        <div class="stat-icon"><i class="bi bi-globe2"></i></div>
+                        <div>
+                            <h3 class="stat-number">200+</h3>
+                            <p class="stat-label">Global Customers</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-6 col-lg">
+                    <div class="stat-item">
+                        <div class="stat-icon"><i class="bi bi-geo-alt-fill"></i></div>
+                        <div>
+                            <h3 class="stat-number stat-sm">Global Presence</h3>
+                            <p class="stat-label">India, USA, Europe<br>and the Middle East</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg">
+                    <div class="stat-item">
+                        <div class="stat-icon"><i class="bi bi-award-fill"></i></div>
+                        <div>
+                            <h3 class="stat-number stat-sm">CMMI Level 5</h3>
+                            <p class="stat-label">Process Maturity</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== INDUSTRIES SECTION ===================== -->
+    <section id="industries" class="industries-section py-5 mb-5">
+        <div class="container">
+            <p class="section-eyebrow">INDUSTRIES WE SERVE</p>
+            <h2 class="section-title">Engineering Solutions Across Industries</h2>
+            <p class="section-sub mb-5">
+                Combining engineering expertise, geospatial intelligence and digital technologies to help organizations
+                address industry-specific challenges and build smarter, more efficient operations.
+            </p>
+
+            <div class="industry-slider-wrap">
+                <button class="slider-nav slider-prev" type="button" aria-label="Previous">
+                    <i class="bi bi-chevron-left"></i>
+                </button>
+                <div class="industry-slider">
+                    <div class="industry-track">
+                        <!-- Card 1 -->
+                        <div class="industry-slide">
+                            <div class="industry-card">
+                                <div class="industry-img" style="background-image:url('img/AEC.png')"></div>
+                                <div class="industry-body">
+                                    <h5>Architecture, Engineering<br>&amp; Construction (AEC)</h5>
+                                    <p>Integrated engineering, BIM and digital solutions supporting smarter design, construction and asset management.</p>
+                                    <a href="#" class="card-arrow"><i class="bi bi-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card 2 -->
+                        <div class="industry-slide">
+                            <div class="industry-card">
+                                <div class="industry-img" style="background-image:url('img/Industrial.png')"></div>
+                                <div class="industry-body">
+                                    <h5>Industrial &amp; Manufacturing</h5>
+                                    <p>Engineering and digital capabilities supporting industrial facilities, manufacturing operations and asset optimization.</p>
+                                    <a href="#" class="card-arrow"><i class="bi bi-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card 3 -->
+                        <div class="industry-slide">
+                            <div class="industry-card">
+                                <div class="industry-img" style="background-image:url('img/land.png')"></div>
+                                <div class="industry-body">
+                                    <h5>Land &amp; Natural Resources</h5>
+                                    <p>Geospatial intelligence and digital solutions supporting land management, resource planning and environmental monitoring.</p>
+                                    <a href="#" class="card-arrow"><i class="bi bi-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card 4 -->
+                        <div class="industry-slide">
+                            <div class="industry-card">
+                                <div class="industry-img" style="background-image:url('img/power.png')"></div>
+                                <div class="industry-body">
+                                    <h5>Power &amp; Energy</h5>
+                                    <p>Geospatial, engineering and digital solutions supporting energy infrastructure, network management and operational efficiency.</p>
+                                    <a href="#" class="card-arrow"><i class="bi bi-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card 5 -->
+                        <div class="industry-slide">
+                            <div class="industry-card">
+                                <div class="industry-img" style="background-image:url('img/Telecommunication.png')"></div>
+                                <div class="industry-body">
+                                    <h5>Telecommunications</h5>
+                                    <p>Geospatial and engineering capabilities supporting telecommunications infrastructure development and network management.</p>
+                                    <a href="#" class="card-arrow"><i class="bi bi-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card 6 -->
+                        <div class="industry-slide">
+                            <div class="industry-card">
+                                <div class="industry-img" style="background-image:url('img/Transportation.png')"></div>
+                                <div class="industry-body">
+                                    <h5>Transportation Infrastructure</h5>
+                                    <p>Integrated engineering, geospatial and digital capabilities supporting the development and management of transportation infrastructure.</p>
+                                    <a href="#" class="card-arrow"><i class="bi bi-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card 7 -->
+                        <div class="industry-slide">
+                            <div class="industry-card">
+                                <div class="industry-img" style="background-image:url('img/water.png')"></div>
+                                <div class="industry-body">
+                                    <h5>Water &amp; Wastewater</h5>
+                                    <p>Engineering, digital monitoring and management solutions supporting efficient and resilient water infrastructure.</p>
+                                    <a href="#" class="card-arrow"><i class="bi bi-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card 8 -->
+                        <div class="industry-slide">
+                            <div class="industry-card">
+                                <div class="industry-img" style="background-image:url('img/mobility.png')"></div>
+                                <div class="industry-body">
+                                    <h5>Automotive &amp; Mobility</h5>
+                                    <p>Integrated product engineering, manufacturing engineering and specialized solutions supporting next-generation mobility.</p>
+                                    <a href="#" class="card-arrow"><i class="bi bi-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="slider-nav slider-next" type="button" aria-label="Next">
+                    <i class="bi bi-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== SERVICES SECTION ===================== -->
+    <section id="services" class="services-section py-5">
+        <div class="container">
+            <p class="section-eyebrow">OUR SERVICES</p>
+            <h2 class="section-title">Integrated Expertise. End-to-End Capabilities.</h2>
+            <p class="section-sub mb-5">
+                From geospatial data acquisition and engineering to digital transformation and advanced technologies,<br>
+                CS TECH Ai delivers integrated services that help organizations plan, develop, manage and optimize their assets and operations.
+            </p>
+
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="service-card">
+                        <div class="service-icon"><i class="bi bi-airplane-fill"></i></div>
+                        <div class="service-content">
+                            <h5>1. Data Acquisition</h5>
+                            <p>Advanced aerial, terrestrial and mobile data capture for infrastructure mapping, engineering and asset intelligence.</p>
+                        </div>
+                        <a href="#" class="service-arrow"><i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="service-card">
+                        <div class="service-icon"><i class="bi bi-geo-alt"></i></div>
+                        <div class="service-content">
+                            <h5>2. Geospatial Data Processing &amp; Mapping</h5>
+                            <p>Transforming imagery, LiDAR and other geospatial datasets into accurate maps, models and actionable information.</p>
+                        </div>
+                        <a href="#" class="service-arrow"><i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="service-card">
+                        <div class="service-icon"><i class="bi bi-stack"></i></div>
+                        <div class="service-content">
+                            <h5>3. Enterprise GIS &amp; Spatial Intelligence</h5>
+                            <p>Enterprise GIS solutions integrating spatial data, applications and analytics to support informed decision-making.</p>
+                        </div>
+                        <a href="#" class="service-arrow"><i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="service-card">
+                        <div class="service-icon"><i class="bi bi-box"></i></div>
+                        <div class="service-content">
+                            <h5>4. BIM, 3D Modelling &amp; Digital Twins</h5>
+                            <p>Intelligent 3D models and digital representations supporting infrastructure development, operations and asset management.</p>
+                        </div>
+                        <a href="#" class="service-arrow"><i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="service-card">
+                        <div class="service-icon"><i class="bi bi-gear-fill"></i></div>
+                        <div class="service-content">
+                            <h5>5. Engineering &amp; Consulting</h5>
+                            <p>Multidisciplinary engineering and consultancy services supporting infrastructure planning, design, implementation and management.</p>
+                        </div>
+                        <a href="#" class="service-arrow"><i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="service-card">
+                        <div class="service-icon"><i class="bi bi-car-front-fill"></i></div>
+                        <div class="service-content">
+                            <h5>6. Automotive &amp; Mobility Engineering</h5>
+                            <p>Integrated product engineering, manufacturing engineering and industrial consultancy for automotive OEMs and Tier 1 suppliers.</p>
+                        </div>
+                        <a href="#" class="service-arrow"><i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="service-card">
+                        <div class="service-icon"><i class="bi bi-display"></i></div>
+                        <div class="service-content">
+                            <h5>7. Product Services</h5>
+                            <p>Technology solutions, licensing, implementation, training and technical support through our established technology partnerships.</p>
+                        </div>
+                        <a href="#" class="service-arrow"><i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="service-card">
+                        <div class="service-icon"><i class="bi bi-cpu-fill"></i></div>
+                        <div class="service-content">
+                            <h5>8. Emerging Tech</h5>
+                            <p>Advanced AI, IoT, automation and related technologies supporting digital transformation and intelligent operations.</p>
+                        </div>
+                        <a href="#" class="service-arrow"><i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== WHY CS TECH AI ===================== -->
+    <section class="why-section py-5 text-white">
+        <div class="container">
+            <p class="section-eyebrow eyebrow-light">WHY CS TECH AI</p>
+            <h2 class="section-title text-white">Integrated Expertise. Intelligent Solutions. Proven Delivery.</h2>
+            <p class="section-sub text-white-75 mb-5">
+                We bring together engineering, geospatial intelligence and advanced digital technologies to solve complex business challenges.<br>
+                Our integrated capabilities, industry experience and flexible delivery approach help customers achieve their objectives throughout the project lifecycle.
+            </p>
+
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="why-item">
+                        <div class="why-icon"><i class="bi bi-diagram-3-fill"></i></div>
+                        <div>
+                            <h5>Integrated Expertise</h5>
+                            <p>Engineering, geospatial, digital and AI capabilities under one roof, enabling coordinated solutions across complex projects.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="why-item">
+                        <div class="why-icon"><i class="bi bi-graph-up-arrow"></i></div>
+                        <div>
+                            <h5>End-to-End Project Delivery</h5>
+                            <p>Supporting customers throughout the project lifecycle, from planning and data acquisition to engineering, implementation and ongoing operations.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="why-item">
+                        <div class="why-icon"><i class="bi bi-award-fill"></i></div>
+                        <div>
+                            <h5>Proven Execution Experience</h5>
+                            <p>Experience delivering complex infrastructure, utility and engineering programmes, combining domain knowledge with advanced technologies.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="why-item">
+                        <div class="why-icon"><i class="bi bi-globe"></i></div>
+                        <div>
+                            <h5>Flexible Global Delivery</h5>
+                            <p>Scalable multidisciplinary teams and flexible engagement models, supporting projects across geographies and time zones.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <hr class="why-divider">
+                    <div class="why-item">
+                        <div class="why-icon"><i class="bi bi-shield-fill-check"></i></div>
+                        <div>
+                            <h5>Committed to Quality, Security and Delivery Excellence</h5>
+                            <p>Supported by established quality processes, information security practices and structured project governance.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== CONTACT ===================== -->
+    <section id="contact" class="contact-section py-5">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-5">
+                    <p class="section-eyebrow">CONTACT US</p>
+                    <h2 class="section-title">Schedule a Consultation</h2>
+                    <p class="section-sub">
+                        Tell us about your requirements. Our experts will
+                        get in touch to discuss how CS TECH Ai can support
+                        your water infrastructure goals.
+                    </p>
+                </div>
+                <div class="col-lg-7">
+                    <form class="contact-form p-4 p-md-5 bg-white shadow-sm rounded">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label class="form-label">First Name<span class="text-danger">*</span></label>
+                                <input type="text" class="form-control" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Last Name<span class="text-danger">*</span></label>
+                                <input type="text" class="form-control" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Email<span class="text-danger">*</span></label>
+                                <input type="email" class="form-control" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Phone Number<span class="text-danger">*</span></label>
+                                <input type="tel" class="form-control" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Company<span class="text-danger">*</span></label>
+                                <input type="text" class="form-control" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Job Title<span class="text-danger">*</span></label>
+                                <input type="text" class="form-control" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Country<span class="text-danger">*</span></label>
+                                <select class="form-select" required>
+                                    <option value="">Select Country</option>
+                                    <option>India</option>
+                                    <option>USA</option>
+                                    <option>UK</option>
+                                    <option>UAE</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">How can we help<span class="text-danger">*</span></label>
+                                <input type="text" class="form-control" required>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="consent" required>
+                                    <label class="form-check-label small" for="consent">
+                                        By signing up I allow CSTECH Ai to use my email address for sending professional updates and
+                                        invitations to conferences and events. Subject to the <a href="#">Privacy Policy</a>.
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-primary submit-btn">Talk to Our Experts</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="site-footer py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-3">
+                    <a href="#" class="footer-brand">
+                        <span class="logo-main">CS TECH</span><sup class="logo-sup">Ai</sup>
+                        <small class="d-block logo-tag">Enhancing Possibilities</small>
+                    </a>
+                </div>
+                <div class="col-6 col-md-3">
+                    <h6 class="footer-heading">Our Presence</h6>
+                    <ul class="footer-list">
+                        <li><a href="#">Global</a></li>
+                        <li><a href="#">India</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-2">
+                    <h6 class="footer-heading">Insights</h6>
+                    <ul class="footer-list">
+                        <li><a href="#">Case Studies</a></li>
+                        <li><a href="#">Blogs</a></li>
+                        <li><a href="#">News</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-2">
+                    <h6 class="footer-heading">Corporate</h6>
+                    <ul class="footer-list">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Investors</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-2 text-md-end">
+                    <h6 class="footer-heading">Privacy Policy</h6>
+                    <a href="#" class="social-link" aria-label="LinkedIn">
+                        <i class="bi bi-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+            <hr class="footer-divider">
+            <p class="footer-copy mb-0">&copy; 2026 CS TECH Ai. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+    <script>
+        // ===== Industries slider =====
+        (function () {
+            const track = document.querySelector('.industry-track');
+            const slides = document.querySelectorAll('.industry-slide');
+            const prevBtn = document.querySelector('.slider-prev');
+            const nextBtn = document.querySelector('.slider-next');
+            if (!track || !slides.length || !prevBtn || !nextBtn) return;
+
+            let index = 0;
+
+            function visibleCount() {
+                const w = window.innerWidth;
+                if (w >= 992) return 4;
+                if (w >= 768) return 2;
+                return 1;
+            }
+
+            function update() {
+                const vc = visibleCount();
+                const maxIndex = Math.max(0, slides.length - vc);
+                if (index > maxIndex) index = maxIndex;
+                if (index < 0) index = 0;
+                const offset = -(index * (100 / vc));
+                track.style.transform = `translateX(${offset}%)`;
+                prevBtn.disabled = index === 0;
+                nextBtn.disabled = index >= maxIndex;
+            }
+
+            prevBtn.addEventListener('click', function () {
+                index -= 1;
+                update();
+            });
+
+            nextBtn.addEventListener('click', function () {
+                index += 1;
+                update();
+            });
+
+            window.addEventListener('resize', update);
+            update();
+        })();
+    </script>
+
+</body>
+
+</html>

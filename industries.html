@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water & Wastewater - CS TECH Ai</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- ===================== NAVBAR ===================== -->
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm fixed-top py-3">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="img/main-logo.jpg" alt="CS TECH Ai" class="site-logo" onerror="this.style.display='none'">
+                <!-- <span class="logo-text ms-2">
+                    <span class="logo-main">CS TECH</span><sup class="logo-sup">Ai</sup>
+                    <small class="d-block logo-tag">Enhancing Possibilities</small>
+                </span> -->
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav mx-auto align-items-lg-center gap-lg-2">
+                    <li class="nav-item"><a class="nav-link active" href="industries.html">Industries</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Solutions &amp; Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Investors</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Careers</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
+                </ul>
+                <div class="dropdown">
+                    <button class="btn btn-link region-btn dropdown-toggle" data-bs-toggle="dropdown">
+                        India/Global
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><a class="dropdown-item" href="#">India</a></li>
+                        <li><a class="dropdown-item" href="#">Global</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ===================== INDUSTRY HERO ===================== -->
+    <section class="industry-hero">
+        <div class="industry-hero-slide" style="background-image:url('img/banner2.png')">
+            <div class="industry-hero-overlay"></div>
+            <div class="container position-relative">
+                <div class="row">
+                    <div class="col-lg-7 col-xl-6">
+                        <div class="industry-hero-content">
+                            <p class="section-eyebrow">WATER &amp; WASTEWATER</p>
+                            <h1 class="industry-hero-title">
+                                Engineering Smarter,<br>
+                                More Resilient<br>
+                                Water Systems
+                            </h1>
+                            <p class="industry-hero-sub">
+                                CS TECH Ai combines engineering, geospatial and digital
+                                capabilities to support water infrastructure across planning,
+                                design, implementation, monitoring and management -
+                                helping utilities and authorities improve efficiency,
+                                visibility and long-term resilience.
+                            </p>
+                            <a href="#contact" class="btn hero-btn">
+                                Talk to Our Experts <i class="bi bi-arrow-right ms-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== EXPERIENCE AT SCALE ===================== -->
+    <section class="experience-scale py-5">
+        <div class="container">
+            <p class="section-eyebrow">EXPERIENCE AT SCALE</p>
+            <h2 class="section-title mb-4">Water infrastructure experience at scale</h2>
+
+            <div class="scale-stats">
+                <div class="scale-item">
+                    <div class="scale-icon"><i class="bi bi-speedometer2"></i></div>
+                    <h3 class="scale-number">35K+ <small>Mile</small></h3>
+                    <p class="scale-label">Designed &amp; Implemented</p>
+                </div>
+                <div class="scale-divider"></div>
+                <div class="scale-item">
+                    <div class="scale-icon"><i class="bi bi-people-fill"></i></div>
+                    <h3 class="scale-number">18.6 Mn+</h3>
+                    <p class="scale-label">Population<br>Covered</p>
+                </div>
+                <div class="scale-divider"></div>
+                <div class="scale-item">
+                    <div class="scale-icon"><i class="bi bi-building"></i></div>
+                    <h3 class="scale-number">4,700+</h3>
+                    <p class="scale-label">Villages<br>Covered</p>
+                </div>
+                <div class="scale-divider"></div>
+                <div class="scale-item">
+                    <div class="scale-icon"><i class="bi bi-pc-display"></i></div>
+                    <h3 class="scale-number">924</h3>
+                    <p class="scale-label">Multi-Village Schemes<br>Digitally Monitored</p>
+                </div>
+                <div class="scale-divider"></div>
+                <div class="scale-item">
+                    <div class="scale-icon"><i class="bi bi-droplet-half"></i></div>
+                    <h3 class="scale-number">5 Lakh+ Ha</h3>
+                    <p class="scale-label">Irrigation Command<br>Area Planned</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== OUR WATER SERVICES ===================== -->
+    <section class="water-services py-5">
+        <div class="container">
+            <p class="section-eyebrow">OUR WATER SERVICES</p>
+            <h2 class="section-title mb-5">Capabilities across Water, Wastewater &amp; Water Resources</h2>
+
+            <div class="row g-4">
+                <!-- Service 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="water-service-card">
+                        <div class="flip-inner">
+                            <div class="flip-front text-center">
+                                <div class="ws-icon">
+                                    <i class="bi bi-hand-thumbs-up-fill"></i>
+                                </div>
+                                <div class="ws-body">
+                                    <h5>Consultancy for<br>Water &amp; Wastewater</h5>
+                                    <p>Engineering and consultancy support across water supply and wastewater infrastructure.</p>
+                                </div>
+                            </div>
+                            <div class="flip-back">
+                                <h6>Key Capabilities</h6>
+                                <ul>
+                                    <li>Engineering Surveys</li>
+                                    <li>Preparation of Detailed Project Reports</li>
+                                    <li>Detailed Engineering &amp; Design</li>
+                                    <li>Network &amp; Hydraulic Modelling</li>
+                                    <li>Project Management Consultancy</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Service 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="water-service-card">
+                        <div class="flip-inner">
+                            <div class="flip-front">
+                                <div class="ws-icon"><i class="bi bi-droplet-fill"></i></div>
+                                <div class="ws-body">
+                                    <h5>Smart Water</h5>
+                                    <p>Connected monitoring and automation for improved visibility and operational control.</p>
+                                </div>
+                            </div>
+                            <div class="flip-back">
+                                <h6>Key Capabilities</h6>
+                                <ul>
+                                    <li>Field Instrumentation, IoT &amp; SCADA</li>
+                                    <li>Smart Consumer Meters</li>
+                                    <li>Smart Water Management Solutions</li>
+                                    <li>Centralised Monitoring &amp; Operational Dashboards</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Service 3 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="water-service-card">
+                        <div class="flip-inner">
+                            <div class="flip-front">
+                                <div class="ws-icon"><i class="bi bi-arrow-repeat"></i></div>
+                                <div class="ws-body">
+                                    <h5>Software Solutions</h5>
+                                    <p>Digital applications supporting water-utility planning, management and operations.</p>
+                                </div>
+                            </div>
+                            <div class="flip-back">
+                                <h6>Key Capabilities</h6>
+                                <ul>
+                                    <li>Water Billing Software</li>
+                                    <li>Design Software</li>
+                                    <li>Web-GIS Applications</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Service 4 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="water-service-card">
+                        <div class="flip-inner">
+                            <div class="flip-front">
+                                <div class="ws-icon"><i class="bi bi-wrench-adjustable"></i></div>
+                                <div class="ws-body">
+                                    <h5>NRW / Reforms</h5>
+                                    <p>Integrated interventions to identify, control and reduce water losses while improving utility performance.</p>
+                                </div>
+                            </div>
+                            <div class="flip-back">
+                                <h6>Key Capabilities</h6>
+                                <ul>
+                                    <li>NRW Assessment &amp; Reduction Strategy</li>
+                                    <li>Water Management Consultancy for NRW Reduction</li>
+                                    <li>Leak Detection</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Service 5 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="water-service-card">
+                        <div class="flip-inner">
+                            <div class="flip-front">
+                                <div class="ws-icon"><i class="bi bi-droplet"></i></div>
+                                <div class="ws-body">
+                                    <h5>Consultancy for Water Quality</h5>
+                                    <p>Field, GIS and technical support for water-quality assessment and planning.</p>
+                                </div>
+                            </div>
+                            <div class="flip-back">
+                                <h6>Key Capabilities</h6>
+                                <ul>
+                                    <li>GIS-Based Field Survey</li>
+                                    <li>Water Quality Testing</li>
+                                    <li>Preparation of Detailed Project Reports</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Service 6 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="water-service-card">
+                        <div class="flip-inner">
+                            <div class="flip-front">
+                                <div class="ws-icon"><i class="bi bi-moisture"></i></div>
+                                <div class="ws-body">
+                                    <h5>Consultancy for Water Resources</h5>
+                                    <p>Engineering and planning support for sustainable development and management of water resources.</p>
+                                </div>
+                            </div>
+                            <div class="flip-back">
+                                <h6>Key Capabilities</h6>
+                                <ul>
+                                    <li>Engineering Surveys</li>
+                                    <li>Flood &amp; Yield Studies</li>
+                                    <li>Preparation of Detailed Project Reports</li>
+                                    <li>Project Management Consultancy</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== WHAT WE HELP YOU ACHIEVE ===================== -->
+    <section class="achievements py-5">
+        <div class="container">
+            <p class="section-eyebrow text-center">WHAT WE HELP YOU ACHIEVE</p>
+            <h2 class="section-title text-center mb-5 mx-auto" style="max-width:900px;">
+                Better water outcomes through engineering, digital intelligence and operational visibility
+            </h2>
+
+            <div class="row align-items-center g-4 achievements-row">
+                <!-- LEFT COLUMN -->
+                <div class="col-lg-4 order-2 order-lg-1">
+                    <div class="side-items side-left">
+                        <div class="side-item">
+                            <div class="side-content py-4">
+                                <h6>Better Planning &amp; Investment Decisions</h6>
+                                <p>Improved project and infrastructure planning based on reliable data.</p>
+                            </div>
+                            <!-- <div class="side-icon"><i class="bi bi-bar-chart-fill"></i></div> -->
+                        </div>
+                        <div class="side-item">
+                            <div class="side-content py-4">
+                                <h6>More Efficient Water Distribution</h6>
+                                <p>Improved network understanding, modelling and operational control.</p>
+                            </div>
+                            <!-- <div class="side-icon"><i class="bi bi-diagram-3-fill"></i></div> -->
+                        </div>
+                        <div class="side-item">
+                            <div class="side-content py-4">
+                                <h6>Reduced Water Losses</h6>
+                                <p>Better identification, monitoring and management of NRW.</p>
+                            </div>
+                            <!-- <div class="side-icon"><i class="bi bi-droplet-fill"></i></div> -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CENTER HUB -->
+                <div class="col-lg-4 order-1 order-lg-2">
+                    <div class="achievements-hub">
+                        <span class="hub-ring hub-ring-outer"></span>
+                        <span class="hub-ring hub-ring-inner"></span>
+                        <div class="hub-core">
+                            <i class="bi bi-droplet-half"></i>
+                        </div>
+                        <div class="hub-mini hub-mini-tl"><i class="bi bi-bar-chart-fill"></i></div>
+                        <div class="hub-mini hub-mini-tr"><i class="bi bi-eye-fill"></i></div>
+                        <div class="hub-mini hub-mini-l"><i class="bi bi-diagram-3-fill"></i></div>
+                        <div class="hub-mini hub-mini-r"><i class="bi bi-clipboard-check-fill"></i></div>
+                        <div class="hub-mini hub-mini-bl"><i class="bi bi-droplet-fill"></i></div>
+                        <div class="hub-mini hub-mini-br"><i class="bi bi-shield-fill-check"></i></div>
+                    </div>
+                </div>
+
+                <!-- RIGHT COLUMN -->
+                <div class="col-lg-4 order-3">
+                    <div class="side-items side-right">
+                        <div class="side-item">
+                            <!-- <div class="side-icon"><i class="bi bi-eye-fill"></i></div> -->
+                            <div class="side-content py-4">
+                                <h6>Greater Asset &amp; Network Visibility</h6>
+                                <p>Integrated GIS, field data and digital systems provide a clearer view of infrastructure.</p>
+                            </div>
+                        </div>
+                        <div class="side-item">
+                            <!-- <div class="side-icon"><i class="bi bi-clipboard-check-fill"></i></div> -->
+                            <div class="side-content py-4">
+                                <h6>Improved Project Monitoring &amp; Governance</h6>
+                                <p>Better visibility across programmes, contractors, progress, quality and documentation.</p>
+                            </div>
+                        </div>
+                        <div class="side-item">
+                            <!-- <div class="side-icon"><i class="bi bi-shield-fill-check"></i></div> -->
+                            <div class="side-content py-4">
+                                <h6>More Resilient Water Infrastructure</h6>
+                                <p>Better planning and management of water, wastewater and water-resource systems.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== CASE STUDIES ===================== -->
+    <section class="case-studies py-5">
+        <div class="container">
+            <div class="d-flex flex-wrap justify-content-between align-items-end mb-4">
+                <div>
+                    <p class="section-eyebrow">CASE STUDIES</p>
+                    <h2 class="section-title mb-0">Real-world water infrastructure impact</h2>
+                </div>
+                <a href="#" class="view-all-link">View All Water Case Studies</a>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-sm-6 col-lg-3">
+                    <div class="case-card" style="background-image:url('img/CASE.png')">
+                        <div class="case-overlay">
+                            <div class="case-body">
+                                <h5>IoT-Based Rural Water Supply Monitoring - Maharashtra</h5>
+                                <p>Centralised monitoring of water quantity, quality and pressure across rural water infrastructure.</p>
+                                <a href="#" class="case-link">Read Case Study <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="case-card" style="background-image:url('img/CASE.png')">
+                        <div class="case-overlay">
+                            <div class="case-body">
+                                <h5>Digital Project Monitoring - 924 Multi-Village Schemes</h5>
+                                <p>Digital platform supporting programme visibility, progress monitoring, workflows and project governance.</p>
+                                <a href="#" class="case-link">Read Case Study <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="case-card" style="background-image:url('img/CASE.png')">
+                        <div class="case-overlay">
+                            <div class="case-body">
+                                <h5>DMA &amp; NRW Management - Delhi</h5>
+                                <p>Network analysis, DMA-based management and field interventions supporting improved water-distribution efficiency.</p>
+                                <a href="#" class="case-link">Read Case Study <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="case-card" style="background-image:url('img/CASE.png')">
+                        <div class="case-overlay">
+                            <div class="case-body">
+                                <h5>Large-Scale River Linking &amp; Irrigation Planning</h5>
+                                <p>Engineering and planning support for complex water-resource and irrigation infrastructure.</p>
+                                <a href="#" class="case-link">Read Case Study <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== CONTACT ===================== -->
+    <section id="contact" class="contact-section py-5">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-5">
+                    <p class="section-eyebrow">CONTACT US</p>
+                    <h2 class="section-title">Schedule a Consultation</h2>
+                    <p class="section-sub">
+                        Tell us about your requirements. Our experts will
+                        get in touch to discuss how CS TECH Ai can support
+                        your water infrastructure goals.
+                    </p>
+                </div>
+                <div class="col-lg-7">
+                    <form class="contact-form p-4 p-md-5 bg-white shadow-sm rounded">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label class="form-label">First Name<span class="text-danger">*</span></label>
+                                <input type="text" class="form-control" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Last Name<span class="text-danger">*</span></label>
+                                <input type="text" class="form-control" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Email<span class="text-danger">*</span></label>
+                                <input type="email" class="form-control" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Phone Number<span class="text-danger">*</span></label>
+                                <input type="tel" class="form-control" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Company<span class="text-danger">*</span></label>
+                                <input type="text" class="form-control" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Job Title<span class="text-danger">*</span></label>
+                                <input type="text" class="form-control" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Country<span class="text-danger">*</span></label>
+                                <select class="form-select" required>
+                                    <option value="">Select Country</option>
+                                    <option>India</option>
+                                    <option>USA</option>
+                                    <option>UK</option>
+                                    <option>UAE</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">How can we help<span class="text-danger">*</span></label>
+                                <input type="text" class="form-control" required>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="consent" required>
+                                    <label class="form-check-label small" for="consent">
+                                        By signing up I allow CSTECH Ai to use my email address for sending professional updates and
+                                        invitations to conferences and events. Subject to the <a href="#">Privacy Policy</a>.
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-primary submit-btn">Talk to Our Experts</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="site-footer py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-3">
+                    <a href="index.html" class="footer-brand">
+                        <img src="img/main-logo.jpg" alt="">
+                        <!-- <span class="logo-main">CS TECH</span><sup class="logo-sup">Ai</sup>
+                        <small class="d-block logo-tag">Enhancing Possibilities</small> -->
+                    </a>
+                </div>
+                <div class="col-6 col-md-3">
+                    <h6 class="footer-heading">Our Presence</h6>
+                    <ul class="footer-list">
+                        <li><a href="#">Global</a></li>
+                        <li><a href="#">India</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-2">
+                    <h6 class="footer-heading">Insights</h6>
+                    <ul class="footer-list">
+                        <li><a href="#">Case Studies</a></li>
+                        <li><a href="#">Blogs</a></li>
+                        <li><a href="#">News</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-2">
+                    <h6 class="footer-heading">Corporate</h6>
+                    <ul class="footer-list">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Investors</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-2 text-md-end">
+                    <h6 class="footer-heading">Privacy Policy</h6>
+                    <a href="#" class="social-link" aria-label="LinkedIn">
+                        <i class="bi bi-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+            <hr class="footer-divider">
+            <p class="footer-copy mb-0">&copy; 2026 CS TECH Ai. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
