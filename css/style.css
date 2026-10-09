@@ -33,7 +33,7 @@ body {
     font-family: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
     color: var(--cs-text);
     line-height: 1.6;
-    padding-top: 86px;
+    padding-top: 100px;
 }
 
 .section-eyebrow {
@@ -76,7 +76,7 @@ body {
 }
 
 .site-logo {
-    height: 44px;
+    height: 70px;
     width: auto;
 }
 
@@ -227,6 +227,25 @@ body {
 .hero-title-gradient sup {
     font-size: 0.5em;
     top: -0.75em;
+}
+
+/* Force GPTW title to render on a single line */
+.hero-title-oneline {
+    white-space: nowrap;
+    font-size: 2.1rem;
+}
+
+@media (max-width: 1199.98px) {
+    .hero-title-oneline {
+        font-size: 1.75rem;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .hero-title-oneline {
+        white-space: normal;
+        font-size: 1.6rem;
+    }
 }
 
 /* Side image used on slides 2 and 3 */
@@ -390,21 +409,28 @@ body {
 .stat-item {
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 14px;
     text-align: left;
 }
 
 .stat-icon {
-    width: 44px;
-    height: 44px;
+    width: 56px;
+    height: 56px;
     background: var(--cs-bg-light);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     color: var(--cs-icon);
-    font-size: 1.2rem;
+    font-size: 1.55rem;
     flex-shrink: 0;
+}
+
+.stat-icon-raster {
+    width: 60%;
+    height: 60%;
+    object-fit: contain;
+    filter: brightness(0) saturate(100%) invert(39%) sepia(85%) saturate(1572%) hue-rotate(355deg) brightness(96%) contrast(89%);
 }
 
 .stat-number {
@@ -742,7 +768,7 @@ body {
 }
 
 .flip-card-link {
-    color: var(--cs-icon);
+    color: #fff;
     font-weight: 600;
     font-size: 0.85rem;
     text-decoration: none;
@@ -750,12 +776,20 @@ body {
     align-items: center;
     gap: 6px;
     align-self: flex-start;
-    transition: gap 0.2s ease;
+    transition: gap 0.2s ease, color 0.2s ease;
+}
+
+.flip-card-link i {
+    color: #fff;
 }
 
 .flip-card-link:hover {
-    color: #fff;
+    color: var(--cs-icon);
     gap: 10px;
+}
+
+.flip-card-link:hover i {
+    color: var(--cs-icon);
 }
 
 /* ---- Industry flip responsive ---- */
@@ -902,15 +936,15 @@ body {
 }
 
 .split-icon {
-    width: 54px;
-    height: 54px;
-    border-radius: 10px;
+    width: 66px;
+    height: 66px;
+    border-radius: 12px;
     background: var(--cs-bg-light);
     display: flex;
     align-items: center;
     justify-content: center;
     color: var(--cs-icon);
-    font-size: 1.4rem;
+    font-size: 1.75rem;
     flex-shrink: 0;
     box-shadow: 0 2px 8px rgba(242, 101, 34, 0.08);
     transition: all 0.25s ease;
@@ -945,8 +979,8 @@ body {
 .services-visual {
     position: relative;
     width: 100%;
-    aspect-ratio: 4 / 5;
-    max-width: 340px;
+    aspect-ratio: 1 / 1;
+    max-width: 220px;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -1107,16 +1141,16 @@ body {
 }
 
 .why-icon {
-    width: 56px;
-    height: 56px;
+    width: 66px;
+    height: 66px;
     background: rgba(255, 255, 255, 0.1);
     border: 2px solid rgba(255, 255, 255, 0.25);
-    border-radius: 50%;
+    border-radius: 12px;
     display: flex;
     align-items: center;
     justify-content: center;
     color: var(--cs-icon);
-    font-size: 1.4rem;
+    font-size: 1.75rem;
     flex-shrink: 0;
 }
 
@@ -1191,6 +1225,12 @@ body {
     display: inline-block;
 }
 
+.footer-brand img {
+    height: 75px;
+    width: auto;
+    max-width: 100%;
+}
+
 .footer-heading {
     color: var(--cs-primary);
     font-weight: 700;
@@ -1251,7 +1291,11 @@ body {
 /* ===================== RESPONSIVE ===================== */
 @media (max-width: 991.98px) {
     body {
-        padding-top: 76px;
+        padding-top: 90px;
+    }
+
+    .site-logo {
+        height: 70px;
     }
 
     .hero-title {
@@ -1313,12 +1357,16 @@ body {
         max-width: 50%;
     }
 
-    /* Split services on tablet/mobile: everything left-aligned, no mirrored direction */
+    /* Split services on tablet/mobile: everything left-aligned, icons on the left for both columns */
     .split-service-left,
     .split-service-right {
-        flex-direction: row;
+        flex-direction: row-reverse;
         text-align: left;
-        justify-content: flex-start;
+        justify-content: flex-end;
+    }
+
+    .split-service-right {
+        flex-direction: row;
     }
 
     .split-service-left .split-content h5,
@@ -1332,13 +1380,32 @@ body {
     }
 
     .services-visual {
-        max-width: 300px;
+        max-width: 220px;
         margin: 10px auto 30px;
     }
 
     .services-side-cta {
         text-align: center !important;
         margin-top: 24px;
+    }
+
+    /* Mobile: give Why items more breathing room between title and copy */
+    .why-item h5 {
+        margin-bottom: 12px;
+    }
+
+    .why-item {
+        gap: 18px;
+    }
+
+    /* Mobile services: space between service title and description */
+    .split-content h5 {
+        margin-bottom: 10px;
+    }
+
+    /* Mobile footer: give logo + columns consistent padding */
+    .footer-brand img {
+        height: 90px;
     }
 }
 
@@ -1351,6 +1418,25 @@ body {
         width: 38px;
         height: 38px;
         font-size: 1rem;
+    }
+
+    /* Hero content aligns with navbar logo on mobile: nudge the inner padding */
+    .hero-slide .container,
+    .hero-section .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    /* Stats bar on mobile: consistent icon size + spacing */
+    .stat-item {
+        gap: 12px;
+        margin-bottom: 6px;
+    }
+
+    .stat-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 1.4rem;
     }
 }
 
