@@ -19,17 +19,15 @@
             --cs-primary: #000080;
             --cs-primary-dark: #000055;
             --cs-primary-light: #1a1aa0;
-            --cs-accent: #E55B1D;
-            --cs-icon: #E55B1D;
+            --cs-accent: #d81159;
+            --cs-icon: #d81159;
             --cs-magenta: #d81159;
             font-family: 'Geist', 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
         }
-        /* Updated gradient per brand: orange → magenta → purple → navy */
+        /* Brand gradient: magenta → navy */
         body.home-page .hero-title-gradient {
             background: linear-gradient(90deg,
-                #FF5622 0%,
-                #d81159 40%,
-                #9C00A7 65%,
+                #d81159 0%,
                 #000080 100%);
             -webkit-background-clip: text;
             background-clip: text;
@@ -128,7 +126,7 @@
                                         </h1>
                                         <p class="hero-sub">
                                             A testament to the culture of trust, innovation, and
-                                            teamwork <br/>at CS TECH Ai.
+                                            teamwork at CS TECH Ai.
                                         </p>
                                         <a href="#" class="btn hero-btn">
                                             Learn More <i class="bi bi-arrow-right ms-2"></i>
@@ -156,8 +154,9 @@
                                             Mobility
                                         </h1>
                                         <p class="hero-sub">
-                                            From design to validation, engineering services across product<br/>
-                                            development, industrial automation, and electrification <br/>for OEMs &amp; Tier 1&rsquo;s globally.
+                                            From design to validation, engineering services across product
+                                            development, industrial automation, and electrification
+                                            for OEMs &amp; Tier 1&rsquo;s globally.
                                         </p>
                                         <a href="#" class="btn hero-btn">
                                             Learn More <i class="bi bi-arrow-right ms-2"></i>
@@ -189,7 +188,7 @@
             <div class="row g-3 text-center text-lg-start">
                 <div class="col-6 col-md-4 col-lg">
                     <div class="stat-item">
-                        <div class="stat-icon"><i class="svg-icon icon-calendar"></i></div>
+                        <div class="stat-icon stat-icon-img"><img src="img/icons/calendar.svg" alt="" class="stat-icon-raster"></div>
                         <div>
                             <h3 class="stat-number"><span data-count="28">0</span>+ <small>Years</small></h3>
                             <p class="stat-label">Industry Experience</p>
@@ -198,7 +197,7 @@
                 </div>
                 <div class="col-6 col-md-4 col-lg">
                     <div class="stat-item">
-                        <div class="stat-icon"><i class="svg-icon icon-peoples"></i></div>
+                        <div class="stat-icon stat-icon-img"><img src="img/icons/peoples.svg" alt="" class="stat-icon-raster"></div>
                         <div>
                             <h3 class="stat-number"><span data-count="1400" data-format="comma">0</span>+</h3>
                             <p class="stat-label">Professionals</p>
@@ -207,7 +206,7 @@
                 </div>
                 <div class="col-6 col-md-4 col-lg">
                     <div class="stat-item">
-                        <div class="stat-icon"><i class="svg-icon icon-web"></i></div>
+                        <div class="stat-icon stat-icon-img"><img src="img/icons/globe.svg" alt="" class="stat-icon-raster"></div>
                         <div>
                             <h3 class="stat-number"><span data-count="200">0</span>+</h3>
                             <p class="stat-label">Global Customers</p>
@@ -219,13 +218,13 @@
                         <div class="stat-icon stat-icon-img"><img src="img/icons/globe.svg" alt="" class="stat-icon-raster"></div>
                         <div>
                             <h3 class="stat-number stat-sm">Global Presence</h3>
-                            <p class="stat-label">India, USA, Europe<br>and the Middle East</p>
+                            <p class="stat-label">India, USA, Europe and the Middle East</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg">
+                <div class="col-6 col-md-6 col-lg">
                     <div class="stat-item">
-                        <div class="stat-icon"><i class="svg-icon icon-badge"></i></div>
+                        <div class="stat-icon stat-icon-img"><img src="img/icons/badge.svg" alt="" class="stat-icon-raster"></div>
                         <div>
                             <h3 class="stat-number stat-sm">CMMI Level 5</h3>
                             <p class="stat-label">Process Maturity</p>
@@ -255,7 +254,7 @@
                         <!-- Card 1 -->
                         <div class="industry-slide">
                             <div class="industry-card">
-                                <div class="industry-img" style="background-image:url('img/AEC.png')"></div>
+                                <div class="industry-img" style="background-image:url('img/AEC.webp')"></div>
                                 <div class="industry-body">
                                     <h5>Architecture, Engineering<br>&amp; Construction (AEC)</h5>
                                     <p>Integrated engineering, BIM and digital solutions supporting smarter design, construction and asset management.</p>
@@ -266,7 +265,7 @@
                         <!-- Card 2 -->
                         <div class="industry-slide">
                             <div class="industry-card">
-                                <div class="industry-img" style="background-image:url('img/Industrial.png')"></div>
+                                <div class="industry-img" style="background-image:url('img/Industrial.webp')"></div>
                                 <div class="industry-body">
                                     <h5>Industrial &amp; Manufacturing</h5>
                                     <p>Engineering and digital capabilities supporting industrial facilities, manufacturing operations and asset optimization.</p>
@@ -277,7 +276,7 @@
                         <!-- Card 3 -->
                         <div class="industry-slide">
                             <div class="industry-card">
-                                <div class="industry-img" style="background-image:url('img/land.png')"></div>
+                                <div class="industry-img" style="background-image:url('img/land.webp')"></div>
                                 <div class="industry-body">
                                     <h5>Land &amp; Natural Resources</h5>
                                     <p>Geospatial intelligence and digital solutions supporting land management, resource planning and environmental monitoring.</p>
@@ -288,7 +287,7 @@
                         <!-- Card 4 -->
                         <div class="industry-slide">
                             <div class="industry-card">
-                                <div class="industry-img" style="background-image:url('img/power.png')"></div>
+                                <div class="industry-img" style="background-image:url('img/power.webp')"></div>
                                 <div class="industry-body">
                                     <h5>Power &amp; Energy</h5>
                                     <p>Geospatial, engineering and digital solutions supporting energy infrastructure, network management and operational efficiency.</p>
@@ -299,7 +298,7 @@
                         <!-- Card 5 -->
                         <div class="industry-slide">
                             <div class="industry-card">
-                                <div class="industry-img" style="background-image:url('img/Telecommunication.png')"></div>
+                                <div class="industry-img" style="background-image:url('img/Telecommunication.webp')"></div>
                                 <div class="industry-body">
                                     <h5>Telecommunications</h5>
                                     <p>Geospatial and engineering capabilities supporting telecommunications infrastructure development and network management.</p>
@@ -310,7 +309,7 @@
                         <!-- Card 6 -->
                         <div class="industry-slide">
                             <div class="industry-card">
-                                <div class="industry-img" style="background-image:url('img/Transportation.png')"></div>
+                                <div class="industry-img" style="background-image:url('img/Transportation.webp')"></div>
                                 <div class="industry-body">
                                     <h5>Transportation Infrastructure</h5>
                                     <p>Integrated engineering, geospatial and digital capabilities supporting the development and management of transportation infrastructure.</p>
@@ -321,7 +320,7 @@
                         <!-- Card 7 -->
                         <div class="industry-slide">
                             <div class="industry-card">
-                                <div class="industry-img" style="background-image:url('img/water.png')"></div>
+                                <div class="industry-img" style="background-image:url('img/water.webp')"></div>
                                 <div class="industry-body">
                                     <h5>Water &amp; Wastewater</h5>
                                     <p>Engineering, digital monitoring and management solutions supporting efficient and resilient water infrastructure.</p>
@@ -332,7 +331,7 @@
                         <!-- Card 8 -->
                         <div class="industry-slide">
                             <div class="industry-card">
-                                <div class="industry-img" style="background-image:url('img/mobility.png')"></div>
+                                <div class="industry-img" style="background-image:url('img/mobility.webp')"></div>
                                 <div class="industry-body">
                                     <h5>Automotive &amp; Mobility</h5>
                                     <p>Integrated product engineering, manufacturing engineering and specialized solutions supporting next-generation mobility.</p>
@@ -350,7 +349,7 @@
     </section>
 
     <!-- ===================== INDUSTRY FLIP CARDS (full width) ===================== -->
-    <section class="industry-flip-section py-5 ">
+    <!-- <section class="industry-flip-section py-5 ">
         <div class="container px-3 px-md-4">
             <div class="industry-flip-header text-center">
                 <p class="section-eyebrow">INDUSTRIES AT A GLANCE</p>
@@ -478,7 +477,7 @@
             <div class="industry-flip-dots" aria-hidden="true"></div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- ===================== SERVICES SECTION ===================== -->
     <section id="services" class="services-section py-5">
@@ -502,28 +501,28 @@
                                 <h5>1. Data Acquisition</h5>
                                 <p>Advanced aerial, terrestrial and mobile data capture for infrastructure mapping, engineering and asset intelligence.</p>
                             </div>
-                            <div class="split-icon"><i class="svg-icon icon-drone"></i></div>
+                            <div class="split-icon"><img src="img/icons/drone.svg" class="stat-icon-raster"></div>
                         </div>
                         <div class="split-service split-service-left">
                             <div class="split-content">
                                 <h5>2. Geospatial Data Processing &amp; Mapping</h5>
                                 <p>Transforming imagery, LiDAR and other geospatial datasets into accurate maps, models and actionable information.</p>
                             </div>
-                            <div class="split-icon"><i class="svg-icon icon-map"></i></div>
+                            <div class="split-icon"><img src="img/icons/map.svg" class="stat-icon-raster"></div>
                         </div>
                         <div class="split-service split-service-left">
                             <div class="split-content">
                                 <h5>3. Enterprise GIS &amp; Spatial Intelligence</h5>
                                 <p>Enterprise GIS solutions integrating spatial data, applications and analytics to support informed decision-making.</p>
                             </div>
-                            <div class="split-icon"><i class="svg-icon icon-stacks"></i></div>
+                            <div class="split-icon"><img src="img/icons/stacks.svg" class="stat-icon-raster"></div>
                         </div>
                         <div class="split-service split-service-left">
                             <div class="split-content">
                                 <h5>4. BIM, 3D Modelling &amp; Digital Twins</h5>
                                 <p>Intelligent 3D models and digital representations supporting infrastructure development, operations and asset management.</p>
                             </div>
-                            <div class="split-icon"><i class="svg-icon icon-cube"></i></div>
+                            <div class="split-icon"><img src="img/icons/cube.svg" class="stat-icon-raster"></div>
                         </div>
                     </div>
                     <!-- <div class="services-side-cta d-none d-lg-block text-end">
@@ -546,28 +545,28 @@
                     <h6 class="services-side-heading text-lg-start">ENGINEERING &amp; TECH</h6>
                     <div class="split-services">
                         <div class="split-service split-service-right">
-                            <div class="split-icon"><i class="svg-icon icon-settings-1"></i></div>
+                            <div class="split-icon"><img src="img/icons/settings-1.svg" class="stat-icon-raster"></div>
                             <div class="split-content">
                                 <h5>5. Engineering &amp; Consulting</h5>
                                 <p>Multidisciplinary engineering and consultancy services supporting infrastructure planning, design, implementation and management.</p>
                             </div>
                         </div>
                         <div class="split-service split-service-right">
-                            <div class="split-icon"><i class="svg-icon icon-car-mobile"></i></div>
+                            <div class="split-icon"><img src="img/icons/car-mobile.svg" class="stat-icon-raster"></div>
                             <div class="split-content">
                                 <h5>6. Automotive &amp; Mobility Engineering</h5>
                                 <p>Integrated product engineering, manufacturing engineering and industrial consultancy for automotive OEMs and Tier 1 suppliers.</p>
                             </div>
                         </div>
                         <div class="split-service split-service-right">
-                            <div class="split-icon"><i class="svg-icon icon-computer"></i></div>
+                            <div class="split-icon"><img src="img/icons/computer.svg" class="stat-icon-raster"></div>
                             <div class="split-content">
                                 <h5>7. Product Services</h5>
                                 <p>Technology solutions, licensing, implementation, training and technical support through our established technology partnerships.</p>
                             </div>
                         </div>
                         <div class="split-service split-service-right">
-                            <div class="split-icon"><i class="svg-icon icon-ai"></i></div>
+                            <div class="split-icon"><img src="img/icons/ai.svg" class="stat-icon-raster"></div>
                             <div class="split-content">
                                 <h5>8. Emerging Tech</h5>
                                 <p>Advanced AI, IoT, automation and related technologies supporting digital transformation and intelligent operations.</p>
@@ -604,7 +603,7 @@
                 </div>
                 <div class="col-md-6">
                     <div class="why-item">
-                        <div class="why-icon"><i class="svg-icon icon-cellular-network"></i></div>
+                        <div class="why-icon"><img src="img/icons/cellular-network.svg" class="stat-icon-raster"></div>
                         <div>
                             <h5>End-to-End Project Delivery</h5>
                             <p>Supporting customers throughout the project lifecycle, from planning and data acquisition to engineering, implementation and ongoing operations.</p>
@@ -613,7 +612,7 @@
                 </div>
                 <div class="col-md-6">
                     <div class="why-item">
-                        <div class="why-icon"><i class="svg-icon icon-badge"></i></div>
+                        <div class="why-icon"><img src="img/icons/badge.svg" class="stat-icon-raster"></div>
                         <div>
                             <h5>Proven Execution Experience</h5>
                             <p>Experience delivering complex infrastructure, utility and engineering programmes, combining domain knowledge with advanced technologies.</p>
@@ -622,7 +621,7 @@
                 </div>
                 <div class="col-md-6">
                     <div class="why-item">
-                        <div class="why-icon"><i class="svg-icon icon-web"></i></div>
+                        <div class="why-icon"><img src="img/icons/web.svg" class="stat-icon-raster"></div>
                         <div>
                             <h5>Flexible Global Delivery</h5>
                             <p>Scalable multidisciplinary teams and flexible engagement models, supporting projects across geographies and time zones.</p>
@@ -631,7 +630,7 @@
                 </div>
                 <div class="col-12 why-commit">
                     <div class="why-item">
-                        <div class="why-icon"><i class="svg-icon icon-shield"></i></div>
+                        <div class="why-icon"><img src="img/icons/shield.svg" class="stat-icon-raster"></div>
                         <div>
                             <h5>Committed to Quality, Security and Delivery Excellence</h5>
                             <p>Supported by established quality processes, information security practices and structured project governance.</p>

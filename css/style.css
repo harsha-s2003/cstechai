@@ -13,8 +13,14 @@
     --cs-border: #D9DEE8;
 }
 
-* {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
+}
+
+html, body {
+    overflow-x: hidden;
 }
 
 /* SVG icon utility - render any SVG as a currentColor-coloured shape via CSS mask */
@@ -427,10 +433,10 @@ body {
 }
 
 .stat-icon-raster {
-    width: 60%;
-    height: 60%;
+    width: 55%;
+    height: 55%;
     object-fit: contain;
-    filter: brightness(0) saturate(100%) invert(39%) sepia(85%) saturate(1572%) hue-rotate(355deg) brightness(96%) contrast(89%);
+    filter: brightness(0) saturate(100%) invert(18%) sepia(90%) saturate(4800%) hue-rotate(330deg) brightness(90%) contrast(95%);
 }
 
 .stat-number {
@@ -1314,18 +1320,32 @@ body {
             rgba(234, 241, 251, 0.65) 100%);
     }
 
-    .hero-slide-gptw,
-    .hero-slide-mobility {
+    .hero-slide-gptw {
         background-size: auto 60%;
         background-position: right -5% bottom 10%;
     }
 
-    .hero-slide-gptw .hero-overlay,
-    .hero-slide-mobility .hero-overlay {
+    .hero-slide-mobility {
+        background-size: cover;
+        background-position: center bottom;
+    }
+
+    .hero-slide-mobility .hero-title br {
+        display: none;
+    }
+
+    .hero-slide-gptw .hero-overlay {
         background: linear-gradient(180deg,
             rgba(234, 241, 251, 0.92) 0%,
             rgba(234, 241, 251, 0.78) 50%,
             rgba(234, 241, 251, 0.65) 100%);
+    }
+
+    .hero-slide-mobility .hero-overlay {
+        background: linear-gradient(180deg,
+            rgba(234, 241, 251, 0.95) 0%,
+            rgba(234, 241, 251, 0.85) 55%,
+            rgba(234, 241, 251, 0.5) 100%);
     }
 
     .hero-badges {
@@ -1389,9 +1409,21 @@ body {
         margin-top: 24px;
     }
 
-    /* Mobile: give Why items more breathing room between title and copy */
+    /* Why section: tighter heading/description spacing */
+    .why-section .section-title {
+        margin-bottom: 0.6rem;
+    }
+
+    .why-section .section-sub {
+        margin-bottom: 1.5rem !important;
+    }
+
     .why-item h5 {
-        margin-bottom: 12px;
+        margin-bottom: 6px;
+    }
+
+    .why-item p {
+        line-height: 1.5;
     }
 
     .why-item {
@@ -1410,6 +1442,13 @@ body {
 }
 
 @media (max-width: 767.98px) {
+    /* Tablet margins: 40px left/right (override Bootstrap fixed container) */
+    .container {
+        max-width: 100%;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
     .industry-slider-wrap {
         padding: 0 40px;
     }
@@ -1420,17 +1459,9 @@ body {
         font-size: 1rem;
     }
 
-    /* Hero content aligns with navbar logo on mobile: nudge the inner padding */
-    .hero-slide .container,
-    .hero-section .container {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-
-    /* Stats bar on mobile: consistent icon size + spacing */
+    /* Stats bar on tablet: consistent icon size + spacing */
     .stat-item {
         gap: 12px;
-        margin-bottom: 6px;
     }
 
     .stat-icon {
@@ -1438,11 +1469,56 @@ body {
         height: 50px;
         font-size: 1.4rem;
     }
+
+    /* Equal spacing in stats: use uniform row gaps */
+    .stats-section .row {
+        row-gap: 20px !important;
+    }
+
+    .stats-section .row > [class*="col"] {
+        margin-bottom: 0;
+    }
+
+    /* Why section stacked: add dividers between items */
+    .why-grid > [class*="col"] {
+        padding: 1rem 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    }
+
+    .why-grid > [class*="col"]:last-child {
+        border-bottom: none;
+    }
 }
 
 @media (max-width: 575.98px) {
+    /* Mobile margins: 20px left/right (container is fluid at this width) */
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
     .hero-title {
         font-size: 1.6rem;
+        margin-bottom: 1rem;
+    }
+
+    .hero-eyebrow {
+        font-size: 0.7rem;
+        letter-spacing: 2px;
+        margin-bottom: 0.4rem;
+    }
+
+    .hero-divider {
+        margin-bottom: 1rem;
+    }
+
+    .hero-sub {
+        font-size: 0.9rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .hero-slide-mobility .hero-title {
+        font-size: 1.4rem;
     }
 
     .hero-badge {
@@ -1451,7 +1527,8 @@ body {
     }
 
     .hero-slide {
-        min-height: 480px;
+        padding: 50px 0;
+        min-height: auto;
     }
 
     .service-card {
@@ -1466,6 +1543,77 @@ body {
     .industry-slide {
         flex: 0 0 100%;
         max-width: 100%;
+    }
+
+    .stat-icon {
+        width: 44px;
+        height: 44px;
+    }
+
+    .stat-number {
+        font-size: 1.35rem;
+    }
+
+    .stat-number.stat-sm {
+        font-size: 1rem;
+    }
+
+    .stat-label {
+        font-size: 0.75rem;
+    }
+
+    .stat-item {
+        gap: 10px;
+    }
+
+    /* Equal row spacing in stats */
+    .stats-section .row {
+        row-gap: 16px !important;
+    }
+
+    .section-title {
+        font-size: 1.4rem;
+    }
+
+    .section-sub {
+        font-size: 0.88rem;
+    }
+
+    .why-section .section-title {
+        font-size: 1.3rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .why-section .section-sub {
+        margin-bottom: 1rem !important;
+    }
+
+    .why-item h5 {
+        font-size: 1rem;
+        margin-bottom: 4px;
+    }
+
+    .why-item p {
+        font-size: 0.85rem;
+        line-height: 1.45;
+    }
+
+    .why-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 1.4rem;
+    }
+
+    .footer-brand img {
+        height: 70px;
+    }
+
+    .contact-form {
+        padding: 1.25rem !important;
+    }
+
+    .industry-slider-wrap {
+        padding: 0 20px;
     }
 }
 
