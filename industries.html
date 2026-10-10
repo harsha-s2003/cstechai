@@ -8,6 +8,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/icons.css">
 </head>
@@ -15,56 +18,24 @@
 <body>
 
     <!-- ===================== NAVBAR ===================== -->
-    <nav class="navbar navbar-expand-lg bg-white shadow-sm fixed-top py-3">
-        <div class="container">
-            <a class="navbar-brand d-flex align-items-center" href="index.html">
-                <img src="img/main-logo.jpg" alt="CS TECH Ai" class="site-logo" onerror="this.style.display='none'">
-                <!-- <span class="logo-text ms-2">
-                    <span class="logo-main">CS TECH</span><sup class="logo-sup">Ai</sup>
-                    <small class="d-block logo-tag">Enhancing Possibilities</small>
-                </span> -->
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="mainNav">
-                <ul class="navbar-nav mx-auto align-items-lg-center gap-lg-2">
-                    <li class="nav-item"><a class="nav-link active" href="industries.html">Industries</a></li>
-                    <li class="nav-item"><a class="nav-link" href="index.html#services">Services</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Solutions &amp; Products</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Investors</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Careers</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
-                </ul>
-                <div class="dropdown">
-                    <button class="btn btn-link region-btn dropdown-toggle" data-bs-toggle="dropdown">
-                        India/Global
-                    </button>
-                    <ul class="dropdown-menu dropdown-menu-end">
-                        <li><a class="dropdown-item" href="#">India</a></li>
-                        <li><a class="dropdown-item" href="#">Global</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </nav>
+    <div id="site-header"></div>
 
-    <!-- ===================== INDUSTRY HERO ===================== -->
-    <section class="industry-hero">
-        <div class="industry-hero-slide" style="background-image:url('img/banner2.png')">
-            <div class="industry-hero-overlay"></div>
+    <!-- ===================== HERO ===================== -->
+    <section class="hero-section">
+        <div class="hero-slide" style="background-image:url('img/banner2.png')">
+            <div class="hero-overlay"></div>
             <div class="container position-relative">
                 <div class="row">
                     <div class="col-lg-7 col-xl-6">
-                        <div class="industry-hero-content">
-                            <p class="section-eyebrow">WATER &amp; WASTEWATER</p>
-                            <h1 class="industry-hero-title">
+                        <div class="hero-content">
+                            <p class="hero-eyebrow">WATER &nbsp;&bull;&nbsp; WASTEWATER</p>
+                            <div class="hero-divider"></div>
+                            <h1 class="hero-title hero-title-gradient">
                                 Engineering Smarter,<br>
                                 More Resilient<br>
                                 Water Systems
                             </h1>
-                            <p class="industry-hero-sub">
+                            <p class="hero-sub">
                                 CS TECH Ai combines engineering, geospatial and digital
                                 capabilities to support water infrastructure across planning,
                                 design, implementation, monitoring and management -
@@ -89,31 +60,31 @@
 
             <div class="scale-stats">
                 <div class="scale-item">
-                    <div class="scale-icon"><i class="svg-icon icon-meter"></i></div>
+                    <div class="scale-icon"><img src="img/icons/meter.svg" alt="" class="stat-icon-raster"></div>
                     <h3 class="scale-number"><span data-count="35">0</span>K+ <small>Mile</small></h3>
                     <p class="scale-label">Designed &amp; Implemented</p>
                 </div>
                 <div class="scale-divider"></div>
                 <div class="scale-item">
-                    <div class="scale-icon"><i class="svg-icon icon-peoples-2"></i></div>
+                    <div class="scale-icon"><img src="img/icons/peoples-2.svg" alt="" class="stat-icon-raster"></div>
                     <h3 class="scale-number"><span data-count="18.6" data-decimals="1">0</span> Mn+</h3>
                     <p class="scale-label">Population<br>Covered</p>
                 </div>
                 <div class="scale-divider"></div>
                 <div class="scale-item">
-                    <div class="scale-icon"><i class="svg-icon icon-certification"></i></div>
+                    <div class="scale-icon"><img src="img/icons/certification.svg" alt="" class="stat-icon-raster"></div>
                     <h3 class="scale-number"><span data-count="4700" data-format="comma">0</span>+</h3>
                     <p class="scale-label">Villages<br>Covered</p>
                 </div>
                 <div class="scale-divider"></div>
                 <div class="scale-item">
-                    <div class="scale-icon"><i class="svg-icon icon-monitor-"></i></div>
+                    <div class="scale-icon"><img src="img/icons/monitor-.svg" alt="" class="stat-icon-raster"></div>
                     <h3 class="scale-number"><span data-count="924">0</span></h3>
                     <p class="scale-label">Multi-Village Schemes<br>Digitally Monitored</p>
                 </div>
                 <div class="scale-divider"></div>
                 <div class="scale-item">
-                    <div class="scale-icon"><i class="svg-icon icon-plants"></i></div>
+                    <div class="scale-icon"><img src="img/icons/plants.svg" alt="" class="stat-icon-raster"></div>
                     <h3 class="scale-number"><span data-count="5">0</span> Lakh+ Ha</h3>
                     <p class="scale-label">Irrigation Command<br>Area Planned</p>
                 </div>
@@ -133,7 +104,7 @@
                     <div class="water-service-card">
                         <div class="flip-inner">
                             <div class="flip-front text-center">
-                                <div class="ws-icon"><i class="svg-icon icon-hand"></i></div>
+                                <div class="ws-icon"><img src="img/icons/hand.svg" alt="" class="stat-icon-raster"></div>
                                 <div class="ws-body">
                                     <h5>Consultancy for<br>Water &amp; Wastewater</h5>
                                     <p>Engineering and consultancy support across water supply and wastewater infrastructure.</p>
@@ -157,7 +128,7 @@
                     <div class="water-service-card">
                         <div class="flip-inner">
                             <div class="flip-front">
-                                <div class="ws-icon"><i class="svg-icon icon-water-tap"></i></div>
+                                <div class="ws-icon"><img src="img/icons/water-tap.svg" alt="" class="stat-icon-raster"></div>
                                 <div class="ws-body">
                                     <h5>Smart Water</h5>
                                     <p>Connected monitoring and automation for improved visibility and operational control.</p>
@@ -180,7 +151,7 @@
                     <div class="water-service-card">
                         <div class="flip-inner">
                             <div class="flip-front">
-                                <div class="ws-icon"><i class="svg-icon icon-arrow"></i></div>
+                                <div class="ws-icon"><img src="img/icons/arrow.svg" alt="" class="stat-icon-raster"></div>
                                 <div class="ws-body">
                                     <h5>Software Solutions</h5>
                                     <p>Digital applications supporting water-utility planning, management and operations.</p>
@@ -202,7 +173,7 @@
                     <div class="water-service-card">
                         <div class="flip-inner">
                             <div class="flip-front">
-                                <div class="ws-icon"><i class="svg-icon icon-water-pipeline"></i></div>
+                                <div class="ws-icon"><img src="img/icons/water-pipeline.svg" alt="" class="stat-icon-raster"></div>
                                 <div class="ws-body">
                                     <h5>NRW / Reforms</h5>
                                     <p>Integrated interventions to identify, control and reduce water losses while improving utility performance.</p>
@@ -224,7 +195,7 @@
                     <div class="water-service-card">
                         <div class="flip-inner">
                             <div class="flip-front">
-                                <div class="ws-icon"><i class="svg-icon icon-droplet"></i></div>
+                                <div class="ws-icon"><img src="img/icons/droplet.svg" alt="" class="stat-icon-raster"></div>
                                 <div class="ws-body">
                                     <h5>Consultancy for Water Quality</h5>
                                     <p>Field, GIS and technical support for water-quality assessment and planning.</p>
@@ -246,7 +217,7 @@
                     <div class="water-service-card">
                         <div class="flip-inner">
                             <div class="flip-front">
-                                <div class="ws-icon"><i class="svg-icon icon-water-2"></i></div>
+                                <div class="ws-icon"><img src="img/icons/water-2.svg" alt="" class="stat-icon-raster"></div>
                                 <div class="ws-body">
                                     <h5>Consultancy for Water Resources</h5>
                                     <p>Engineering and planning support for sustainable development and management of water resources.</p>
@@ -310,14 +281,14 @@
                         <span class="hub-ring hub-ring-outer"></span>
                         <span class="hub-ring hub-ring-inner"></span>
                         <div class="hub-core">
-                            <i class="svg-icon icon-water"></i>
+                            <img src="img/icons/water.svg" alt="" class="stat-icon-raster">
                         </div>
-                        <div class="hub-mini hub-mini-tl"><i class="svg-icon icon-stocks-"></i></div>
-                        <div class="hub-mini hub-mini-tr"><i class="svg-icon icon-eye"></i></div>
-                        <div class="hub-mini hub-mini-l"><i class="svg-icon icon-water-3"></i></div>
-                        <div class="hub-mini hub-mini-r"><i class="svg-icon icon-checklist"></i></div>
-                        <div class="hub-mini hub-mini-bl"><i class="svg-icon icon-droplet"></i></div>
-                        <div class="hub-mini hub-mini-br"><i class="svg-icon icon-shield"></i></div>
+                        <div class="hub-mini hub-mini-tl"><img src="img/icons/stocks-.svg" class="stat-icon-raster"></div>
+                        <div class="hub-mini hub-mini-tr"><img src="img/icons/eye.svg" class="stat-icon-raster"></div>
+                        <div class="hub-mini hub-mini-l"><img src="img/icons/water-3.svg" class="stat-icon-raster"></div>
+                        <div class="hub-mini hub-mini-r"><img src="img/icons/checklist.svg" class="stat-icon-raster"></div>
+                        <div class="hub-mini hub-mini-bl"><img src="img/icons/droplet.svg" class="stat-icon-raster"></div>
+                        <div class="hub-mini hub-mini-br"><img src="img/icons/shield.svg" class="stat-icon-raster"></div>
                     </div>
                 </div>
 
@@ -475,7 +446,7 @@
                                 </div>
                             </div>
                             <div class="col-12">
-                                <button type="submit" class="btn btn-primary submit-btn">Talk to Our Experts</button>
+                                <button type="submit" class="btn btn-primary submit-btn">Submit Enquiry</button>
                             </div>
                         </div>
                     </form>
@@ -485,56 +456,12 @@
     </section>
 
     <!-- ===================== FOOTER ===================== -->
-    <footer class="site-footer py-5">
-        <div class="container">
-            <div class="row g-4">
-                <div class="col-md-3">
-                    <a href="index.html" class="footer-brand">
-                        <img src="img/main-logo.jpg" alt="">
-                        <!-- <span class="logo-main">CS TECH</span><sup class="logo-sup">Ai</sup>
-                        <small class="d-block logo-tag">Enhancing Possibilities</small> -->
-                    </a>
-                </div>
-                <div class="col-6 col-md-3">
-                    <h6 class="footer-heading">Our Presence</h6>
-                    <ul class="footer-list">
-                        <li><a href="#">Global</a></li>
-                        <li><a href="#">India</a></li>
-                    </ul>
-                </div>
-                <div class="col-6 col-md-2">
-                    <h6 class="footer-heading">Insights</h6>
-                    <ul class="footer-list">
-                        <li><a href="#">Case Studies</a></li>
-                        <li><a href="#">Blogs</a></li>
-                        <li><a href="#">News</a></li>
-                    </ul>
-                </div>
-                <div class="col-6 col-md-2">
-                    <h6 class="footer-heading">Corporate</h6>
-                    <ul class="footer-list">
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Investors</a></li>
-                        <li><a href="#">Careers</a></li>
-                        <li><a href="#">Contact Us</a></li>
-                    </ul>
-                </div>
-                <div class="col-6 col-md-2 text-md-end">
-                    <h6 class="footer-heading">Privacy Policy</h6>
-                    <a href="#" class="social-link" aria-label="LinkedIn">
-                        <i class="bi bi-linkedin"></i>
-                    </a>
-                </div>
-            </div>
-            <hr class="footer-divider">
-            <p class="footer-copy mb-0">&copy; 2026 CS TECH Ai. All rights reserved.</p>
-        </div>
-    </footer>
+    <div id="site-footer"></div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
-
+    <script src="js/include.js"></script>
     <script src="js/counter.js"></script>
 
 </body>

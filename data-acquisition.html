@@ -8,6 +8,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/icons.css">
 </head>
@@ -15,68 +18,35 @@
 <body>
 
     <!-- ===================== NAVBAR ===================== -->
-    <nav class="navbar navbar-expand-lg bg-white shadow-sm fixed-top py-3">
-        <div class="container">
-            <a class="navbar-brand d-flex align-items-center" href="index.html">
-                <img src="img/main-logo.jpg" alt="CS TECH Ai" class="site-logo" onerror="this.style.display='none'">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="mainNav">
-                <ul class="navbar-nav mx-auto align-items-lg-center gap-lg-2">
-                    <li class="nav-item"><a class="nav-link" href="industries.html">Industries</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="data-acquisition.html">Services</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Solutions &amp; Products</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Investors</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Careers</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
-                </ul>
-                <div class="dropdown">
-                    <button class="btn btn-link region-btn dropdown-toggle" data-bs-toggle="dropdown">
-                        India/Global
-                    </button>
-                    <ul class="dropdown-menu dropdown-menu-end">
-                        <li><a class="dropdown-item" href="#">India</a></li>
-                        <li><a class="dropdown-item" href="#">Global</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </nav>
+    <div id="site-header"></div>
 
     <!-- ===================== HERO ===================== -->
-    <section class="da-hero">
-        <div class="container-fluid px-0">
-            <div class="row g-0">
-                <div class="col-lg-5 cd-hero-left">
-                    <div class="cd-hero-content">
-                        <p class="cd-hero-eyebrow">
-                            <span class="cd-hero-dash"></span>
-                            DATA ACQUISITION
-                        </p>
-                        <h1 class="cd-hero-title">
-                            Capturing the World.<br>
-                            Enabling Better Decisions.
-                        </h1>
-                        <p class="cd-hero-sub">
-                            CS TECH Ai delivers geospatial data acquisition services
-                            using satellite imagery, aerial and UAV technologies, LiDAR
-                            and terrestrial data capture. Our capabilities provide the
-                            accurate spatial information required for infrastructure
-                            development, utility management, land administration
-                            and engineering applications.
-                        </p>
-                        <a href="#contact" class="btn cd-hero-btn">
-                            Talk to Our Experts <i class="bi bi-arrow-right ms-2"></i>
-                        </a>
+    <section class="hero-section">
+        <div class="hero-slide" style="background-image:url('img/data-acquisition-banner.png')">
+            <div class="hero-overlay"></div>
+            <div class="container position-relative">
+                <div class="row">
+                    <div class="col-lg-7 col-xl-6">
+                        <div class="hero-content">
+                            <p class="hero-eyebrow">DATA &nbsp;&bull;&nbsp; ACQUISITION</p>
+                            <div class="hero-divider"></div>
+                            <h1 class="hero-title hero-title-gradient">
+                                Capturing the World.<br>
+                                Enabling Better Decisions.
+                            </h1>
+                            <p class="hero-sub">
+                                CS TECH Ai delivers geospatial data acquisition services
+                                using satellite imagery, aerial and UAV technologies, LiDAR
+                                and terrestrial data capture. Our capabilities provide the
+                                accurate spatial information required for infrastructure
+                                development, utility management, land administration
+                                and engineering applications.
+                            </p>
+                            <a href="#contact" class="btn hero-btn">
+                                Talk to Our Experts <i class="bi bi-arrow-right ms-2"></i>
+                            </a>
+                        </div>
                     </div>
-                </div>
-                <div class="col-lg-7 da-hero-right">
-                    <img src="img/data-acquisition-banner.png" alt="Aerial drone city mapping"
-                         class="da-hero-img"
-                         onerror="this.style.display='none'">
                 </div>
             </div>
         </div>
@@ -341,40 +311,12 @@
     </section>
 
     <!-- ===================== FOOTER ===================== -->
-    <footer class="site-footer py-5">
-        <div class="container">
-            <div class="row g-4">
-                <div class="col-md-3">
-                    <a href="index.html" class="footer-brand">
-                        <span class="logo-main">CS TECH</span><sup class="logo-sup">Ai</sup>
-                        <small class="d-block logo-tag">Enhancing Possibilities</small>
-                    </a>
-                </div>
-                <div class="col-6 col-md-3">
-                    <h6 class="footer-heading">Our Presence</h6>
-                    <ul class="footer-list"><li><a href="#">Global</a></li><li><a href="#">India</a></li></ul>
-                </div>
-                <div class="col-6 col-md-2">
-                    <h6 class="footer-heading">Insights</h6>
-                    <ul class="footer-list"><li><a href="#">Case Studies</a></li><li><a href="#">Blogs</a></li><li><a href="#">News</a></li></ul>
-                </div>
-                <div class="col-6 col-md-2">
-                    <h6 class="footer-heading">Corporate</h6>
-                    <ul class="footer-list"><li><a href="#">About Us</a></li><li><a href="#">Investors</a></li><li><a href="#">Careers</a></li><li><a href="#">Contact Us</a></li></ul>
-                </div>
-                <div class="col-6 col-md-2 text-md-end">
-                    <h6 class="footer-heading">Privacy Policy</h6>
-                    <a href="#" class="social-link" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
-                </div>
-            </div>
-            <hr class="footer-divider">
-            <p class="footer-copy mb-0">&copy; 2026 CS TECH Ai. All rights reserved.</p>
-        </div>
-    </footer>
+    <div id="site-footer"></div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
+    <script src="js/include.js"></script>
 
 </body>
 
